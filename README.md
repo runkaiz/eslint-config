@@ -11,23 +11,6 @@ Want to add an eslint rule? Open a PR!
 After installing `@runkai/eslint-config` with your package manager of choice,
 import it and put it in the configuration array in `eslint.config.js`.
 
-Create a `tsconfig.lint.json` file in your root directory:
-```json
-{
-    "extends": "./tsconfig.json",
-    "include": [
-      "eslint.config.js",
-      "svelte.config.js",
-      "vite.config.ts",
-      "tailwind.config.cjs",
-      "postcss.config.cjs",
-      "src/**/*.js",
-      "src/**/*.ts",
-      "src/**/*.svelte",
-    ],
-}
-```
-
 ### JavaScript
 ```js
 import svelteConfig from '@runkai/eslint-config';
