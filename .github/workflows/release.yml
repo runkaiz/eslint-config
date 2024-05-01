@@ -5,14 +5,12 @@ on:
     branches:
       - master
 
-permissions: {}
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
 jobs:
   release:
     # prevents this action from running on forks
     if: github.repository == 'runkaiz/eslint-config'
-    permissions:
-      contents: write # to create release (changesets/action)
-      pull-requests: write # to create pull request (changesets/action)
     name: Release
     runs-on: ubuntu-latest
     steps:
@@ -27,6 +25,7 @@ jobs:
         with:
           cache: pnpm
 
+      - name: Install Dependencies
       - run: pnpm install --frozen-lockfile
 
       - name: Create Release Pull Request or Publish to npm
