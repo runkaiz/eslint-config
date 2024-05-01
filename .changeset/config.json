@@ -1,6 +1,11 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
-  "changelog": ["@svitejs/changesets-changelog-github-compact", { "repo": "sveltejs/eslint-config" }],
+  "changelog": [
+    "@svitejs/changesets-changelog-github-compact",
+    {
+      "repo": "runkaiz/eslint-config"
+    }
+  ],
   "commit": false,
   "fixed": [],
   "linked": [],

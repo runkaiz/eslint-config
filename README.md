@@ -1,18 +1,36 @@
 ## ESLint configuration
 
-Common eslint configuration for the Svelte organisation
+Opinionated eslint configuration for the Svelte & SvelteKit environment. Configured to work with TypeScript.
 
 ## Contributing
 
-Want to add an eslint rule? Open a PR and use gh-polls for voting: https://app.gh-polls.com/
+Want to add an eslint rule? Open a PR!
 
 ## Usage
 
-After installing `@sveltejs/eslint-config` with your package manager of choice,
+After installing `@runkai/eslint-config` with your package manager of choice,
 import it and put it in the configuration array in `eslint.config.js`.
 
+Create a `tsconfig.lint.json` file in your root directory:
+```json
+{
+    "extends": "./tsconfig.json",
+    "include": [
+      "eslint.config.js",
+      "svelte.config.js",
+      "vite.config.ts",
+      "tailwind.config.cjs",
+      "postcss.config.cjs",
+      "src/**/*.js",
+      "src/**/*.ts",
+      "src/**/*.svelte",
+    ],
+}
+```
+
+### JavaScript
 ```js
-import svelteConfig from '@sveltejs/eslint-config';
+import svelteConfig from '@runkai/eslint-config';
 
 export default [
 	...svelteConfig,
@@ -20,6 +38,21 @@ export default [
 		// your overrides
 	}
 ];
+```
+
+### TypeScript
+```ts
+// @ts-check
+
+import tseslint from 'typescript-eslint';
+import svelteConfig from '@runkai/eslint-config';
+
+export default tseslint.config(
+	...svelteConfig,
+	{
+		// your overrides
+	}
+);
 ```
 
 ## Linting
