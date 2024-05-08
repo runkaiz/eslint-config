@@ -1,15 +1,15 @@
 const antfuOptions = {
     typescript: {
         tsconfigPath: 'tsconfig.json',
-        filesTypeAware: ['**\/*.{ts}']
+        filesTypeAware: ['**\/*.{ts,svelte}']
     },
     stylistic: {
         indent: 4
     },
     svelte: true,
     formatters: {
-        css: true,
-        html: true,
+        css: 'prettier',
+        html: 'prettier',
         markdown: 'prettier'
     },
     ignores: [
