@@ -5,13 +5,7 @@ const rzConfigSvelte = [
         rules: {
             'style/indent-binary-ops': 'off',
             'svelte/html-self-closing': ['error', 'always'],
-            'svelte/first-attribute-linebreak': [
-                'error',
-                {
-                    multiline: 'below',
-                    singleline: 'beside'
-                }
-            ],
+            'svelte/first-attribute-linebreak': 'off',
             'svelte/sort-attributes': 'error',
             'svelte/shorthand-directive': [
                 'error',
@@ -54,7 +48,8 @@ const rzConfigSvelte = [
             'svelte/no-reactive-reassign': 'error',
             'svelte/no-store-async': 'error',
             'svelte/require-store-reactive-access': 'error',
-            'svelte/valid-prop-names-in-kit-pages': 'error'
+            'svelte/valid-prop-names-in-kit-pages': 'error',
+            'svelte/html-quotes': ['warn', { prefer: 'double' }]
         }
     }
 ]

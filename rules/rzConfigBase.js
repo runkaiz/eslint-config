@@ -13,8 +13,9 @@ const rzConfigBase = [
         rules: {
             'node/prefer-global/process': ['error', 'always'],
             'antfu/top-level-function': 'off',
+            'antfu/if-newline': 'off',
             'style/max-len': [
-                'error',
+                'warn',
                 {
                     code: 80,
                     ignoreUrls: true,
@@ -22,7 +23,8 @@ const rzConfigBase = [
                     ignoreTemplateLiterals: true
                 }
             ],
-            'antfu/if-newline': 'off'
+            'style/operator-linebreak': ['error', 'before'],
+            'style/brace-style': ['error', '1tbs', { allowSingleLine: true }]
         }
     }
 ]
