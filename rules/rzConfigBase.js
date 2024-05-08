@@ -16,7 +16,10 @@ const rzConfigBase = [
             'style/max-len': [
                 'error',
                 {
-                    code: 80
+                    code: 80,
+                    ignoreUrls: true,
+                    ignoreStrings: true,
+                    ignoreTemplateLiterals: true
                 }
             ],
             'antfu/if-newline': 'off'
