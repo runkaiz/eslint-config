@@ -1,3 +1,11 @@
-import { runkai } from './index.js'
+import { prettier, runkai, svelte, tailwind } from './index.js'
 
-export default runkai()
+export default runkai(
+    {
+        ignores: ['*.yaml', '.github/**']
+    },
+    prettier,
+    svelte,
+    tailwind,
+    {}
+)
