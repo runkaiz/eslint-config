@@ -1,8 +1,5 @@
 ## Runkai's ESLint & Prettier configuration for Svelte
 
-[![License][license-src]][license-href]
-[![code style][antfu-src]][antfu-href]
-
 Opinionated eslint & prettier configuration for the Svelte & SvelteKit environment. Configured to work with TypeScript. Based on `@antfu/eslint-config` and `stefanobartoletti/eslint-config`.
 
 ## 🛠️ Setup

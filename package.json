@@ -1,7 +1,7 @@
 {
     "name": "@runkai/eslint-config",
     "type": "module",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "packageManager": "pnpm@8.6.0",
     "description": "Svelte ESLint config",
     "author": "Runkai Zhang (https://github.com/runkaiz/)",
