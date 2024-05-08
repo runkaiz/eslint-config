@@ -13,9 +13,12 @@ const rzConfigBase = [
         rules: {
             'node/prefer-global/process': ['error', 'always'],
             'antfu/top-level-function': 'off',
-            'style/max-len': ['error', {
-                code: 80
-            }]
+            'style/max-len': [
+                'error',
+                {
+                    code: 80
+                }
+            ]
         }
     }
 ]

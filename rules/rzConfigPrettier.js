@@ -1,5 +1,5 @@
-import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import eslintPluginPrettier from 'eslint-plugin-prettier/recommended'
 
-const rzConfigPrettier = [eslintPluginPrettierRecommended]
+const rzConfigPrettier = [eslintPluginPrettier]
 
 export default rzConfigPrettier

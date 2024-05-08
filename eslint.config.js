@@ -6,6 +6,5 @@ export default runkai(
     },
     prettier,
     svelte,
-    tailwind,
-    {}
+    tailwind
 )
