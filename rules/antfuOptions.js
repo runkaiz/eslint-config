@@ -9,11 +9,10 @@ const antfuOptions = {
         indent: 4
     },
     formatters: {
-        css: 'prettier',
-        html: 'prettier',
-        markdown: 'prettier'
-    },
-    ignores: ['build', 'public', '.changeset', '.github']
+        css: true,
+        html: true,
+        markdown: true
+    }
 }
 
 export default antfuOptions

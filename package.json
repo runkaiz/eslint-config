@@ -1,7 +1,7 @@
 {
     "name": "@runkai/eslint-config",
     "type": "module",
-    "version": "1.2.6",
+    "version": "1.2.7",
     "packageManager": "pnpm@8.6.0",
     "description": "Svelte ESLint config",
     "author": "Runkai Zhang (https://github.com/runkaiz/)",
@@ -32,7 +32,6 @@
     "dependencies": {
         "@antfu/eslint-config": "^2.16.3",
         "@eslint/eslintrc": "^3.0.2",
-        "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-format": "^0.1.1",
         "eslint-plugin-svelte": "2.36.0-next.13",
         "eslint-plugin-tailwindcss": "^3.15.1",
