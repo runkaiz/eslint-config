@@ -18,7 +18,8 @@ const rzConfigBase = [
                 {
                     code: 80
                 }
-            ]
+            ],
+            'antfu/if-newline': 'off'
         }
     }
 ]
