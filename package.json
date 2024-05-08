@@ -1,7 +1,7 @@
 {
     "name": "@runkai/eslint-config",
     "type": "module",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "packageManager": "pnpm@8.6.0",
     "description": "Svelte ESLint config",
     "author": "Runkai Zhang (https://github.com/runkaiz/)",
@@ -24,7 +24,8 @@
         "inspect": "npx @eslint/config-inspector"
     },
     "peerDependencies": {
-        "eslint": "^9.2.0"
+        "eslint": "^9.2.0",
+        "prettier": "3.2.5"
     },
     "dependencies": {
         "@antfu/eslint-config": "^2.16.3",
@@ -41,6 +42,7 @@
         "@changesets/cli": "^2.27.1",
         "@eslint/eslintrc": "^3.0.2",
         "@svitejs/changesets-changelog-github-compact": "^1.1.0",
-        "eslint": "^9.2.0"
+        "eslint": "^9.2.0",
+        "prettier": "3.2.5"
     }
 }
