@@ -13,7 +13,6 @@ const antfuOptions = {
         markdown: 'prettier'
     },
     ignores: [
-        'node_modules',
         'build',
         'public',
         '.changeset',

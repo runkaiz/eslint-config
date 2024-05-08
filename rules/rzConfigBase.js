@@ -3,6 +3,14 @@ const rzConfigBase = [
     {
         name: 'runkai/general',
         rules: {
+            'style/comma-dangle': ['error', 'never']
+        }
+    },
+    // Code Style Rules
+    {
+        name: 'runkai/code-style',
+        files: ['**/*.{js,jsx,ts,tsx,svelte}'],
+        rules: {
             'node/prefer-global/process': ['error', 'always'],
             'antfu/top-level-function': 'off',
             'style/max-len': ['error', {
@@ -11,16 +19,7 @@ const rzConfigBase = [
                 ignoreStrings: true,
                 ignoreTemplateLiterals: true,
                 ignoreRegExpLiterals: true
-            }],
-            'style/comma-dangle': ['error', 'never']
-        }
-    },
-    // Exceptions
-    {
-        name: 'runkai/exceptions/style',
-        files: ['package.json'],
-        rules: {
-            'style/max-len': 'off'
+            }]
         }
     }
 ]
