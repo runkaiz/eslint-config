@@ -14,11 +14,7 @@ const rzConfigBase = [
             'node/prefer-global/process': ['error', 'always'],
             'antfu/top-level-function': 'off',
             'style/max-len': ['error', {
-                code: 80,
-                ignoreUrls: true,
-                ignoreStrings: true,
-                ignoreTemplateLiterals: true,
-                ignoreRegExpLiterals: true
+                code: 80
             }]
         }
     }

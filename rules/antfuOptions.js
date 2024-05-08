@@ -3,9 +3,7 @@ const antfuOptions = {
     typescript: {
         tsconfigPath: 'tsconfig.json',
         filesTypeAware: [`**\/*.{ts,svelte}`],
-        parserOptions: {
-            extraFileExtensions: ['.ts', '.svelte']
-        }
+        parserOptions: { extraFileExtensions: ['.ts', '.svelte'] }
     },
     stylistic: {
         indent: 4
@@ -15,12 +13,7 @@ const antfuOptions = {
         html: 'prettier',
         markdown: 'prettier'
     },
-    ignores: [
-        'build',
-        'public',
-        '.changeset',
-        '.github'
-    ]
+    ignores: ['build', 'public', '.changeset', '.github']
 }
 
 export default antfuOptions
