@@ -82,6 +82,14 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
 
 Install [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
+Add the following settings to your `package.json`:
+
+```json
+{
+    "prettier": "@runkai/eslint-config"
+}
+```
+
 Add the following settings to your `.vscode/settings.json`:
 
 ```jsonc
