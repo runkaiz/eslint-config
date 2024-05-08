@@ -4,7 +4,7 @@ export default runkai(
     {
         ignores: ['*.yaml', '.github/**']
     },
-    prettier,
     svelte,
-    tailwind
+    tailwind,
+    prettier
 )

@@ -1,7 +1,7 @@
 {
     "name": "@runkai/eslint-config",
     "type": "module",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "packageManager": "pnpm@8.6.0",
     "description": "Svelte ESLint config",
     "author": "Runkai Zhang (https://github.com/runkaiz/)",
@@ -18,6 +18,7 @@
     "main": "index.js",
     "scripts": {
         "lint": "eslint .",
+        "lint:debug": "eslint . --debug",
         "lint:fix": "eslint . --fix",
         "lint:ci": "eslint . --format junit -o reports/junit/eslint-results.xml",
         "release": "changeset publish",

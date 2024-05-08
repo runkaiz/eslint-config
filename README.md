@@ -10,6 +10,16 @@ Opinionated eslint & prettier configuration for the Svelte & SvelteKit environme
 pnpm i -D eslint @runkaiz/eslint-config
 ```
 
+(Workaround for Prettier config) Create a file called `.prettierrc.yaml`:
+
+```yaml
+trailingComma: none
+tabWidth: 4
+semi: false
+singleQuote: true
+printWidth: 80
+```
+
 ### Configuration
 
 With [`"type": "module"`](https://nodejs.org/api/packages.html#type) in `package.json` (recommended):
@@ -59,12 +69,13 @@ This package also provides optional configuration for Svelte and Tailwind. They 
 
 ```js
 // eslint.config.js
-import { runkai, svelte, tailwind } from '@runkai/eslint-config'
+import { prettier, runkai, svelte, tailwind } from '@runkai/eslint-config'
 
 export default runkai(
     {}, // @antfu/eslint-config options, must always be present as first item
     svelte,
     tailwind,
+    prettier,
     {
         // ESlint Flat config rule object
     }
@@ -79,7 +90,7 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
 
 Install [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-Add the following settings to your `package.json`:
+Add the following settings to your `package.json` (Currently not working):
 
 ```json
 {
