@@ -10,14 +10,19 @@ Opinionated eslint & prettier configuration for the Svelte & SvelteKit environme
 pnpm i -D eslint @runkaiz/eslint-config
 ```
 
-(Workaround for Prettier config) Create a file called `.prettierrc.yaml`:
+(Workaround for Prettier config) Create a file called `.prettierrc`:
 
-```yaml
-trailingComma: none
-tabWidth: 4
-semi: false
-singleQuote: true
-printWidth: 80
+```json
+{
+    "useTabs": false,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "semi": false,
+    "printWidth": 100,
+    "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
+    "overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }]
+}
 ```
 
 ### Configuration
@@ -148,10 +153,7 @@ Add the following settings to your `.vscode/settings.json`:
     // Enable eslint for all supported languages
     "eslint.validate": [
         "javascript",
-        "javascriptreact",
         "typescript",
-        "typescriptreact",
-        "vue",
         "html",
         "markdown",
         "json",
