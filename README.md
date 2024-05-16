@@ -19,8 +19,8 @@ pnpm i -D eslint @runkaiz/eslint-config
     "singleQuote": true,
     "trailingComma": "none",
     "semi": false,
-    "printWidth": 100,
-    "arrowParens": "avoid",
+    "printWidth": 80,
+    "arrowParens": "always",
     "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
     "overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }]
 }
