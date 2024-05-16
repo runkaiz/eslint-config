@@ -49,7 +49,8 @@ const rzConfigSvelte = [
             'svelte/no-store-async': 'error',
             'svelte/require-store-reactive-access': 'error',
             'svelte/valid-prop-names-in-kit-pages': 'error',
-            'svelte/html-quotes': ['warn', { prefer: 'double' }]
+            'svelte/html-quotes': ['warn', { prefer: 'double' }],
+            'svelte/indent': 'off'
         }
     }
 ]
