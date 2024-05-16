@@ -9,9 +9,13 @@ const antfuOptions = {
         indent: 4
     },
     formatters: {
+        astro: false,
         css: true,
+        graphql: true,
         html: true,
-        markdown: true
+        markdown: true,
+        slidev: false,
+        xml: true
     }
 }
 

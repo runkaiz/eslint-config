@@ -95,7 +95,9 @@ Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?it
 
 Install [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-Add the following settings to your `package.json` (Currently not working):
+(If using Svelte) Install [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
+
+(Not working) Add the following settings to your `package.json`:
 
 ```json
 {
@@ -113,20 +115,10 @@ Add the following settings to your `.vscode/settings.json`:
     // Use Prettier for files that Eslint cannot process
     "editor.formatOnSave": true,
     "editor.defaultFormatter": null,
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[markdown]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode",
+        "editor.formatOnSave": true
     },
 
     // Auto fix
@@ -136,35 +128,36 @@ Add the following settings to your `.vscode/settings.json`:
         "source.organizeImports": "never"
     },
 
-    // Silent the stylistic rules in you IDE, but still auto fix them
-    "eslint.rules.customizations": [
-        { "rule": "style/*", "severity": "off" },
-        { "rule": "format/*", "severity": "off" },
-        { "rule": "*-indent", "severity": "off" },
-        { "rule": "*-spacing", "severity": "off" },
-        { "rule": "*-spaces", "severity": "off" },
-        { "rule": "*-order", "severity": "off" },
-        { "rule": "*-dangle", "severity": "off" },
-        { "rule": "*-newline", "severity": "off" },
-        { "rule": "*quotes", "severity": "off" },
-        { "rule": "*semi", "severity": "off" }
-    ],
-
     // Enable eslint for all supported languages
-    "eslint.validate": [
+    "eslint.probe": [
         "javascript",
+        "javascriptreact",
         "typescript",
+        "typescriptreact",
         "html",
         "markdown",
         "json",
         "jsonc",
         "yaml",
         "toml",
+        "xml",
         "gql",
-        "graphql",
-        "svelte",
-        "postcss"
+        "graphql"
     ]
+
+    // Silent the stylistic rules in you IDE, but still auto fix them
+    //   "eslint.rules.customizations": [
+    //     { "rule": "style/*", "severity": "off" },
+    //     { "rule": "format/*", "severity": "off" },
+    //     { "rule": "*-indent", "severity": "off" },
+    //     { "rule": "*-spacing", "severity": "off" },
+    //     { "rule": "*-spaces", "severity": "off" },
+    //     { "rule": "*-order", "severity": "off" },
+    //     { "rule": "*-dangle", "severity": "off" },
+    //     { "rule": "*-newline", "severity": "off" },
+    //     { "rule": "*quotes", "severity": "off" },
+    //     { "rule": "*semi", "severity": "off" }
+    //   ],
 }
 ```
 
