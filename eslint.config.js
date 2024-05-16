@@ -1,10 +1,6 @@
-import { prettier, runkai, svelte, tailwind } from './index.js'
+import { prettier, runkai } from './index.js'
 
 export default runkai(
-    {
-        ignores: ['*.yaml', '.github/**']
-    },
-    svelte,
-    tailwind,
+    {},
     prettier
 )

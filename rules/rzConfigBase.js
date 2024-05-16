@@ -3,7 +3,8 @@ const rzConfigBase = [
     {
         name: 'runkai/general',
         rules: {
-            'style/comma-dangle': ['error', 'never']
+            'style/comma-dangle': ['error', 'never'],
+            'yaml/indent': 'off'
         }
     },
     // Code Style Rules

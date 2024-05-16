@@ -20,6 +20,7 @@ pnpm i -D eslint @runkaiz/eslint-config
     "trailingComma": "none",
     "semi": false,
     "printWidth": 100,
+    "arrowParens": "avoid",
     "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
     "overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }]
 }
@@ -142,7 +143,27 @@ Add the following settings to your `.vscode/settings.json`:
         "toml",
         "xml",
         "gql",
-        "graphql"
+        "graphql",
+        "github-actions-workflow",
+        "svelte"
+    ],
+
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "markdown",
+        "json",
+        "jsonc",
+        "yaml",
+        "toml",
+        "xml",
+        "gql",
+        "graphql",
+        "github-actions-workflow",
+        "svelte"
     ]
 
     // Silent the stylistic rules in you IDE, but still auto fix them
