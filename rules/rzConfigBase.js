@@ -28,7 +28,8 @@ const rzConfigBase = [
             'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
             'ts/consistent-type-definitions': 'off',
             'style/arrow-parens': 'off',
-            'style/operator-linebreak': 'off'
+            'style/operator-linebreak': 'off',
+            'style/member-delimiter-style': 'off'
         }
     }
 ]
