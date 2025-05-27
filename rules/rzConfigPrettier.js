@@ -1,7 +1,12 @@
 import eslintConfigPrettier from 'eslint-config-prettier'
 
 const rzConfigPrettier = [
-    eslintConfigPrettier
+    eslintConfigPrettier,
+    {
+        rules: {
+            'format/prettier': 'off'
+        }
+    }
 ]
 
 export default rzConfigPrettier
